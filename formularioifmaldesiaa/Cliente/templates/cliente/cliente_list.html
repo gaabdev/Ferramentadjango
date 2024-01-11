@@ -1,0 +1,30 @@
+{% extends 'index.html' %} 
+{% block main %}
+<div class="m-6">
+	<table class="table m-4  table-striped">
+		<h3 class="m-4"> Cliente </h3>
+		<thead>
+		  <tr>
+			<th scope="col">#</th>
+			<th scope="col">Nome</th>
+			<th scope="col">Sobrenome</th>
+			<th scope="col">Data Nascimento</th>
+			<th scope="col"></th>
+		  </tr>
+		</thead>
+		<tbody>
+		{% for cliente in cliente_list %}
+				<tr>
+					<th scope="row">1{{cliente.pk}}</th>
+					<td>{{cliente.nome}}</td>
+					<td>{{cliente.sobrenome}}</td>
+					<td>{{ cliente.dataNascimento }}</td>
+					<td>
+						<a href="{% url 'client_update' pk=cliente.pk %}">Alterar</a>
+						<a href="{% url 'client_delete' pk=cliente.pk %}">Excluir</a>
+					</td>
+		{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% endblock %}

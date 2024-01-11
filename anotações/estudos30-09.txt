@@ -1,0 +1,35 @@
+Estudos Django 
+Data: 30/09/2023
+
+Puta Sábado à noite e eu aqui estudando...
+
+Compilador x interpretador?
+- O compilador executa o código como um todo e é mais rápido
+- O interpretador executa o código linha por linha
+
+Funçoes nativas
+- Já fazem parte da linguagem python e não precisam ser importadas para utilizá-las
+Para criar novos diretórios:
+
+• Deletar diretórios:
+
+1. import os
+2.
+3. os.mkdir(‘Nova pasta’)
+
+1. import os
+2.
+3. os.rmdir(‘Nova pasta’)
+
+Para renomear arquivos:
+
+• Para deletar arquivos:
+
+1. import os
+2.
+3. os.rename(‘arquivo.txt’ , ‘arquivo_backup.txt’)
+
+1. import os
+2.
+3. os.remove(‘arquivo.txt’)
+

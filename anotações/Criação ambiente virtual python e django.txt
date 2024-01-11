@@ -1,0 +1,24 @@
+Criando uma ambiente virtual e instalando o django
+
+obs:para o python funcionar no terminal windows, deve-se instalá-lo no microsoft store primeiro. puta sacoo...
+
+Instlando virtualenv
+- pip install virtualenv
+
+Criando ambiente virtual
+- python -m venv .venv
+
+Ativando ambiente virtual
+- .venv\Scrtipts\Activate
+
+Instalar django
+- pip install django
+
+Criar projeto django
+-django-admin startproject nome .
+
+Criar aplicação
+- django-admin startapp nome .
+
+desativar ambiente
+- deactivate .venv
